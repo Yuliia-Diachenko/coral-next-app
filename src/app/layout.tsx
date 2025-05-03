@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope, Markazi_Text } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
+const geistSans = Manrope({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const geistMarkazi = Markazi_Text({
+  variable: "--font-geist-markazi",
   subsets: ["latin"],
 });
 
@@ -24,8 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMarkazi.variable}`}>
+        { /* < Header /> */}
         {children}
+        {/* < Footer/> */}
       </body>
     </html>
   );
