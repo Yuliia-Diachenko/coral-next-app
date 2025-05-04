@@ -2,7 +2,12 @@ export default function DesktopNavBar() {
     return (
         <>
         <div>
-            <div><img src="" alt="" /></div>
+            <ul>
+                <li>Home</li>
+                <li>Solutions</li>
+                <li>Resources</li>
+                <li>Contact</li>
+            </ul>
         </div>
         </>
     )
