@@ -1,3 +1,6 @@
+@import 'tailwindcss';
+@import 'modern-normalize/modern-normalize.css';
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -26,8 +29,7 @@ body {
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 a {
